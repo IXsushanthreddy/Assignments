@@ -7,6 +7,7 @@ class Employee{
         this.id=id;
         this.name=name;
         this.monthlySalary=monthlySalary;
+        this.companyName=companyName;
     }
     void calculateAnnualSalary(){
         double annualSalary=(12*monthlySalary);
