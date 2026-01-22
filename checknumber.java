@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Scanner;
+
 class Check{
     void posneg(int n){
         if(n>0){
@@ -20,7 +21,7 @@ class Check{
         }
     }
 }
-public class checkNumber{
+public class checknumber{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number:");

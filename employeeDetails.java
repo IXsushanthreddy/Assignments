@@ -2,6 +2,7 @@ class Employee{
     int id;
     String name;
     double monthlySalary;
+    static String companyName="Innovatechs";
     void info(int id,String name,double  monthlySalary){
         this.id=id;
         this.name=name;
@@ -13,9 +14,11 @@ class Employee{
 
     }
     void displayEmployeeDetails(){
-        System.out.println("Student ID: "+id);
-        System.out.println("Student Name: "+name);
-        System.out.println("Student Score: "+monthlySalary);
+        System.out.println("Empolyee Company: "+companyName);
+        System.out.println(" Empolyee ID: "+id);
+        System.out.println("Empolyee Name: "+name);
+        System.out.println("Empolyee monthlySalary: "+monthlySalary);
+
     }
 }
 public class employeeDetails{

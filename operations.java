@@ -5,7 +5,7 @@ class operation {
         return a+b;
     }
     boolean isEven(int n){
-        if(n%2==0){
+        if((n &1)==0){
             return true;
         }
         else{
@@ -13,11 +13,17 @@ class operation {
         }
     }
     int fact(int n){
-        int fac=1;
-        for(int i=1;i<=n;i++){
-            fac=fac*i;
+        if(n>=0){
+        if(n==0 || n==1){
+            return 1;
         }
-        return fac;
+        else{
+            return n*fact(n-1);
+        }
+    }
+    else{
+        return -1;
+    }
     }
     
 }
