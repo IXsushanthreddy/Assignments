@@ -85,6 +85,3 @@ sc.close();
 
 
 
-public class marks {
-    
-}

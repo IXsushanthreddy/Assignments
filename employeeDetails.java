@@ -3,7 +3,7 @@ class Employee{
     String name;
     double monthlySalary;
     static String companyName="Innovatechs";
-    void info(int id,String name,double  monthlySalary){
+    Employee(int id,String name,double  monthlySalary){
         this.id=id;
         this.name=name;
         this.monthlySalary=monthlySalary;
@@ -24,10 +24,8 @@ class Employee{
 }
 public class employeeDetails{
     public static void main(String[] args) {
-        Employee emp1=new Employee();   
-        Employee emp2=new Employee();
-        emp1.info(101,"sushanth",100000);
-        emp2.info(102,"Reddy",120000);
+        Employee emp1=new Employee(101,"sushanth",100000);   
+        Employee emp2=new Employee(102,"Reddy",120000);
         
         emp1.displayEmployeeDetails();
         emp1.calculateAnnualSalary();
