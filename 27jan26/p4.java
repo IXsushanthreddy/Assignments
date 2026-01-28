@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 public class p4 {
     static int summ(ArrayList<Number> su){
         int s=0;
+        //unboxing
         for(Number i:su){
             s=s+i.intValue();
         }
@@ -12,6 +13,7 @@ public class p4 {
     static double Average(ArrayList<Number> su){
         double s=0;
         int c=0;
+        //unboxing
         for(Number i:su){
             s=s+i.intValue();
             c=c+1;
@@ -34,8 +36,10 @@ public class p4 {
                 String input = sc.next();
            try {
                 if (input.contains(".")) {
+                    //autoboxing
                     list.add(Double.parseDouble(input));
                 } else {
+                    //autoboxing
                     list.add(Integer.parseInt(input)); 
                 }
             } catch (NumberFormatException e) {
