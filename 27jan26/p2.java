@@ -45,9 +45,7 @@ public class p2 {
         Iterator<String> itt=arr.iterator();
 		while(itt.hasNext()){
 			String f=itt.next();
-			if(f.equals("sai")){
-				itt.remove();
-			}
+			System.out.println(f);
 		}
         System.out.println(arr);
 
