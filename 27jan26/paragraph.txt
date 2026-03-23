@@ -1,0 +1,11 @@
+The FileInputStream class in Java is used to read data from a file in the form of bytes . 
+Its ideal for reading binary data such as images or audio files .
+For reading text files, its better to use             FileReader .
+Direct Access : It directly reads the file content from the disk without buffering
+Platform Independent : It can work on any operating system .
+Java is a high-level , object-oriented programming language used to build web apps,
+ mobile applications , and enterprise software systems .
+
+Known for its Write Once , Run Anywhere capability , which means code written in Java 
+can run on any device that supports the Java Virtual Machine (JVM) .
+Syntax and structure is similar to C-based languages like C++ and C# .
