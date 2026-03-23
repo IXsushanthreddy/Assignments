@@ -1,0 +1,19 @@
+package com.sushanthreddy.springboot.springbootday6.Repository;
+
+import com.sushanthreddy.springboot.springbootday6.Model.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface StudentRepository extends JpaRepository<Student, Long> {
+
+    Optional<Student> findByNameIgnoreCase(String name);
+
+    List<Student> findByNameEndingWithIgnoreCase(String suffix);
+
+    @Query("SELECT s FROM Student s WHERE s.age > :age")
+    List<Student> findStudentsOlderThan(@Param("age") int age);
+}
