@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: SpringAssignment003
+  profiles:
+    active: prod
+
+
+server:
+  port: 8858

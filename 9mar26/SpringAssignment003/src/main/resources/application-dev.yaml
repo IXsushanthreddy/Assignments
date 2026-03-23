@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: springboot-dev
+server:
+  port: 8857
+
+app:
+  message: Running in DEV environment
